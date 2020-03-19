@@ -9,3 +9,8 @@ type Stack struct {
 func (s *Stack) Push(x float32) {
 	s.Data = append(s.Data, x)
 }
+
+// Peek returns x from top of the stack
+func (s *Stack) Peek() float32 {
+	return s.Data[len(s.Data)-1]
+}
